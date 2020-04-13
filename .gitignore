@@ -21,3 +21,4 @@ ExportedFiles.xml
 .cache/
 node_modules/
 yarn-error.log
+dist/

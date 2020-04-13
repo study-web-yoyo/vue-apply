@@ -10,11 +10,17 @@
     "build": "rm -rf dist/* && parcel  build index.html -d dist --public-url ./"
   },
   "dependencies": {
-    "todo": "^1.1.0",
+    "typescript": "^3.8.3",
     "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-property-decorator": "^8.4.1",
     "yoyo-web-common": "^1.0.5"
   },
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.1.2",
+    "vue-template-compiler": "^2.6.11"
   }
 }

@@ -12125,42 +12125,20 @@ var app7 = new _vue.default({
     }]
   }
 });
-},{"vue":"node_modules/vue/dist/vue.common.js"}],"node_modules/yoyo-web-common/lib/utils/string.js":[function(require,module,exports) {
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * 去空格
- * @param str 字符串
- * @returns {string}
- */
-exports.stringTrim = function (str) {
-    return str.replace(/(^\s*)|(\s*$)/g, '');
-};
-function add(a, b) {
-    return a + b;
-}
-exports.add = add;
-function add222(a, b) {
-    return a + b;
-}
-exports.add222 = add222;
-
-},{}],"index.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.common.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
 
 require("./todo");
 
-var _string = require("yoyo-web-common/lib/utils/string");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /*
  * @Author: yangyao
  * @Date: 2020-04-01 17:27:43
- * @LastEditors: yangyao
- * @LastEditTime: 2020-04-03 16:58:27
+ * @LastEditors: yyao
+ * @LastEditTime: 2020-04-13 09:43:58
  * @Description: 文件描述
  */
 new _vue.default({
@@ -12197,10 +12175,6 @@ var app5 = new _vue.default({
   },
   methods: {
     reverseMessage: function reverseMessage() {
-      var a = "123   123123  11212";
-      console.log("old -a", a);
-      var test = (0, _string.add)(1, 2);
-      console.log("test", test);
       this.message = this.message.split("").reverse().join("");
     }
   }
@@ -12211,7 +12185,7 @@ var app6 = new _vue.default({
     message: "Hello Vue!"
   }
 });
-},{"vue":"node_modules/vue/dist/vue.common.js","./todo":"todo.js","yoyo-web-common/lib/utils/string":"node_modules/yoyo-web-common/lib/utils/string.js"}],"C:/Users/yangyao/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.common.js","./todo":"todo.js"}],"C:/Users/yangyao/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -12239,7 +12213,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63654" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63520" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
